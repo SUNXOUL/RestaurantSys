@@ -1,0 +1,37 @@
+﻿@page "/Menu"
+<head>
+    <Link type="stylesheet" href="Menu.razor.css">
+</head>
+<body >
+<h3>Menu</h3>
+
+<div class="Agregar">
+    <hr>
+    <h5>AGREGAR PLATILLO</h5>
+
+    <input placeholder="Nombre" @bind="Nombre">
+    <input placeholder="Ingredientes" @bind="Ingredientes">
+    <input placeholder="Precio" @bind="Precio">
+    <input placeholder="Tipo" @bind="Tipo">
+    <input placeholder="Pic" @bind="Pic">
+    <a href="" class="Add">Agregar</a>
+    <hr>
+</div>
+
+<a class="addPl" href="#">+</a>
+</body>
+
+
+
+@code {
+    public String Nombre;
+    public String Ingredientes;
+    public int? Precio;
+    public String Tipo;
+
+    public String Pic;
+    public List<Platillo> Menuplatillos = new();
+        
+    
+}
+

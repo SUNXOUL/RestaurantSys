@@ -1,0 +1,47 @@
+﻿<h3>OPlatillo</h3>
+
+<div class="card">
+    <header>    
+    <H3 title=@Tipo>@Nombre</H3>
+    <p>@Ingredientes</p>
+    </header>
+    <body>
+        <img src="pic" alt="IMG del Plato">
+    </body>
+    <footer>
+        <H4>$RD @Precio </H4>
+        <label >@Cantidad</label>
+        <button @onclick="aumentar">+</button>
+        <button @onclick="disminuir">-</button>
+    </footer>
+
+</div>
+
+@code {
+    public int Cantidad;
+
+    public void aumentar()
+    {
+        this.Cantidad++;
+    }
+    public void disminuir()
+    {
+        if(Cantidad>=0)
+        {
+
+        }
+        else{
+            this.Cantidad--;
+        }
+        
+    }
+
+    [Parameter]
+    public String? Nombre{ get; set; }
+    public String? Ingredientes{ get; set; }
+    public int? Precio{ get; set; }
+    public String? Tipo{ get; set; }
+
+    public String? Pic{ get; set; }
+
+}

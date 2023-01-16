@@ -1,0 +1,20 @@
+.addPl{
+    position: sticky;
+    top: 95%;
+    left: 95%;
+    padding: 15px;
+    background-color: rgb(106,9,4);
+    border-radius:50px 50px;
+    color: white;
+    font-size: 300%;
+}
+body{
+    
+}
+body a{
+    text-decoration: none;
+}
+.Agregar{
+    height: 100%;
+    display: none;
+}

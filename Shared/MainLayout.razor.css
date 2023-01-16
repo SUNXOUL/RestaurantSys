@@ -1,0 +1,110 @@
+
+header a{
+    text-decoration: none;
+}
+header{
+    background-color: rgb(249, 221, 8);
+    width: 100%;
+    border: 5px;
+
+    border-style: solid;
+    border-color: rgb(106,9,4);
+    position: sticky;
+    top: 0px;
+}
+
+.OptionsList a {
+    color:rgb(106,9,4) ;
+    display: inline-block;
+    padding: 10px ;
+    font-family: sans-serif;
+    color: rgb(249,221,8) ;
+}
+.Logo img{
+    height:200px;
+    position: absolute;
+    left:40%;
+}
+
+.OptionsList a:hover{
+    background-color:rgb(106,9,4) ;
+    
+}
+
+.OptionsList{
+    background-color:rgb(224,25,19);
+    border: 5px;
+    border-bottom:0px;
+    border-left: 0px;
+    border-right: 0px;
+    border-style: solid;
+    border-color: rgb(106,9,4);
+
+}
+.About{
+    background-color:rgba(85, 0, 0, 1);
+}
+.About h2,p{
+    color: white;
+    margin: 15px;
+}
+
+.Redes img{
+    height: 40px;
+}
+.Redes img:hover{
+    height: 60px;
+}
+.Redes a{
+    padding: 15px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+.Redes{
+    display: flex;
+    width: auto;
+    justify-content: right;
+    align-items: top;
+    height: 80px;
+}
+
+
+@media (max-width:600px)
+{
+    header{
+    background-color:rgb(195,20,15);
+    display: inline-block;
+    position: sticky;
+    top: -126px;
+    height: 211px;
+    border: none;
+    }
+
+    .OptionsList{
+        display: flex;
+        justify-content: center;
+        position: absolute;
+        top: 126px;
+        width: 100%;
+        border: none;
+    }
+
+    .OptionsList a{
+        padding: 30px;
+        width: 100%;
+        text-align: center;
+    }
+    .OptionsList a:hover
+    {
+        background-color:rgb(106,9,4) ;
+
+    }
+    .Logo img{
+        height: 120px;
+    }
+    .Redes{
+        display: none;
+    }
+
+
+}
