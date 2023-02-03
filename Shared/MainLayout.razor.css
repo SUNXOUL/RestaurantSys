@@ -11,6 +11,7 @@ header{
     border-color: rgb(106,9,4);
     position: sticky;
     top: 0px;
+    z-index: 2;
 }
 
 .OptionsList a {

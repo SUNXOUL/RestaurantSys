@@ -8,13 +8,30 @@
     color: white;
     font-size: 300%;
 }
-body{
-    
-}
+
 body a{
     text-decoration: none;
 }
 .Agregar{
-    height: 100%;
-    display: none;
+    height: 30%;
+    width: 25%;
+    background-color: rgb(245, 254, 207);
+    padding: 15px;
+    border-radius: 25px;
+    position: absolute;
+    top: 40%;
+    left: 40%;
+    z-index: 1;
 }
+.MPlatillos{
+    height: 800px;
+    background-color: rgb(234, 231, 231);
+    border-radius: 25px;
+}
+.Bar{
+    width: 100%;
+    background-color: rgb(224,25,19);
+    height: 30px;
+
+}
+

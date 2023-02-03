@@ -5,33 +5,35 @@
 <body >
 <h3>Menu</h3>
 
-<div class="Agregar">
-    <hr>
+<div class="Agregar" >
     <h5>AGREGAR PLATILLO</h5>
 
     <input placeholder="Nombre" @bind="Nombre">
     <input placeholder="Ingredientes" @bind="Ingredientes">
     <input placeholder="Precio" @bind="Precio">
     <input placeholder="Tipo" @bind="Tipo">
-    <input placeholder="Pic" @bind="Pic">
-    <a href="" class="Add">Agregar</a>
-    <hr>
+    <input placeholder="Pic" @bind="Pic"><br>
+    <button type="button" class="btn btn-warning" style="margin-top: 10%;">Agregar Plato</button>
+    <button type="button" class="btn btn-danger" style="margin-top: 10%;">Cancelar</button>
 </div>
 
-<a class="addPl" href="#">+</a>
+<div class="MPlatillos" >
+    <div class="Bar">
+
+    </div>
+</div>
 </body>
 
 
 
 @code {
-    public String Nombre;
-    public String Ingredientes;
+    public String? Nombre;
+    public String? Ingredientes;
     public int? Precio;
-    public String Tipo;
+    public String? Tipo;
 
-    public String Pic;
+    public String? Pic;
     public List<Platillo> Menuplatillos = new();
-        
     
 }
 
